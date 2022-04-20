@@ -1,0 +1,57 @@
+.heroContainer{
+    height:600px;
+    background-image: url("/Desktop_header.png");
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    margin:0;
+    position:relative;
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heroH1{
+    font-weight: 800;
+    font-size: 7rem;
+    width: 100%;
+    text-align: center;
+    margin:0;
+}
+.heroH3{
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width:1024px) {
+    .heroContainer{
+        height:520px;
+    }
+    .heroH1{
+        font-size: 5rem;
+    }
+    .heroH3{
+        font-size: 4rem;
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    .heroContainer{
+        height:230px;
+    }
+    .heroH1{
+        font-size: 2.5rem;
+        width: 80%;
+        margin:0 auto;
+    }
+    .heroH3{
+        font-size: 2rem;
+        margin: .8rem 0;
+    }
+
+}

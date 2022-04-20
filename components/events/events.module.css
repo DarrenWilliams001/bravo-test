@@ -1,0 +1,133 @@
+.eventsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+    position: relative;
+}
+
+.eventContainer{
+    overflow: hidden;
+    height: 480px;
+    flex: 0 0 33.333%;
+    padding: 40px 20px;
+}
+
+.eventContainer:nth-child(2){
+    margin-top: 40px;
+}
+.eventContainer:nth-child(3){
+    margin-top: 80px;
+}
+.eventContainer:nth-child(4){
+    margin-top: -20px;
+}
+.eventContainer:nth-child(5){
+    margin-top: 20px;
+}
+.eventContainer:nth-child(6){
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.img{
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.info{
+    background-color:#F2F2F2;
+    height:100%;
+    padding: 30px;
+    display:flex;
+    flex-direction:column;
+}
+.info>h4{
+    margin:0;
+}
+
+@media only screen and (max-width:1024px) {
+    .eventContainer{
+        flex: 0 0 50%;
+        padding: 20px;
+    }
+    .eventContainer:nth-child(2){
+        margin-top: 40px;
+    }
+    .eventContainer:nth-child(3){
+        margin-top: 20px;
+    }
+    .eventContainer:nth-child(4){
+        margin-top: 60px;
+    }
+    .eventContainer:nth-child(5){
+        margin-top: 20px;
+    }
+    .eventContainer:nth-child(6){
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+
+    .eventsContainer{
+        margin: 20px;
+    }
+    .eventContainer{
+        flex: 0 0 100%;
+        padding: 0px 0;
+        display: flex;
+        height: 120px;
+        background-color:#F2F2F2;
+    }
+    .img{
+        min-width: 120px;
+        width: 120px;
+        height: 100%;
+    }
+
+    .eventContainer:after{
+        content: url("/right_chevron.svg");
+        display: block;
+        margin:auto 0;
+    }
+    .eventContainer:nth-child(2){
+        margin-top: 10px;
+    }
+    .eventContainer:nth-child(3){
+        margin-top: 10px;
+    }
+    .eventContainer:nth-child(4){
+        margin-top: 10px;
+    }
+    .eventContainer:nth-child(5){
+        margin-top: 10px;
+    }
+    .eventContainer:nth-child(6){
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .info{
+        height:100%;
+        padding: 20px;
+        width: 50%;
+    }
+    .info>h4{
+        margin:5px 0;
+    }
+    .info>p{
+        margin:0;
+        font-size: .7em;
+        text-overflow: ellipsis;
+        white-space:normal;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
