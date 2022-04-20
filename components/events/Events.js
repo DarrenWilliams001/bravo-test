@@ -20,6 +20,7 @@ function Events() {
     <div className={style.eventsContainer}>
       {events.map((event) => (
         <Event
+          key={event.title}
           title={event.title}
           description={event.description}
           desktopImage={event.imgUrlDesktop}

@@ -26,10 +26,11 @@ function Header() {
   return (
     <div className={styles.headerContainer}>
       <div>
-        <Image src="/logo.svg" width={100} height={100} />
+        <Image alt="logo" src="/logo.svg" width={100} height={100} />
       </div>
       <div onClick={handleClick}>
         <Image
+          alt="openIcon"
           src={mobileOpen ? "/close_icon.svg" : "/menu_icon.svg"}
           width={windowSize >= 376 ? 0 : 30}
           height={windowSize >= 376 ? 0 : 30}

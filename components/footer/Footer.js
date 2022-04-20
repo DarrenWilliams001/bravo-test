@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.imgWrapper}>
-        <Image src="/logo.svg" width={100} height={100} />
+        <Image alt="logo" src="/logo.svg" width={100} height={100} />
       </div>
       <ul className={styles.linkList}>
         <Link href="/privacy"> Privacy </Link>
