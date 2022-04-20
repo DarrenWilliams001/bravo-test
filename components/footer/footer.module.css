@@ -28,7 +28,7 @@
     }
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:390px) {
     .footerContainer{
         height:250px;
         flex-direction: column;

@@ -32,12 +32,12 @@ function Header() {
         <Image
           alt="openIcon"
           src={mobileOpen ? "/close_icon.svg" : "/menu_icon.svg"}
-          width={windowSize >= 376 ? 0 : 30}
-          height={windowSize >= 376 ? 0 : 30}
+          width={windowSize >= 390 ? 0 : 30}
+          height={windowSize >= 390 ? 0 : 30}
         />
       </div>
       <div
-        className={windowSize <= 375 ? styles.mobileMenu : styles.desktopMenu}
+        className={windowSize <= 389 ? styles.mobileMenu : styles.desktopMenu}
       >
         <ul className={styles.menuList}>
           <Link href="/program">Program</Link>
